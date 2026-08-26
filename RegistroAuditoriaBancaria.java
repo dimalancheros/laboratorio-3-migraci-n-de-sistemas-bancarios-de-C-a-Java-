@@ -4,7 +4,7 @@ public class RegistroAuditoriaBancaria implements AutoCloseable {
 
     public RegistroAuditoriaBancaria(String idRegistro) {
         this.idRegistro = idRegistro;
-        System.out.println("[AUDITORÍA] Abriendo recurso de log para el registro: " + this.idRegistro);
+        System.out.println("Abriendo recurso de log para el registro: " + this.idRegistro);
     }
 
     public void registrarEvento(String mensaje) {
@@ -13,6 +13,6 @@ public class RegistroAuditoriaBancaria implements AutoCloseable {
 
     @Override
     public void close() {
-        System.out.println("[AUDITORÍA] Cerrando y liberando recurso de forma segura para el registro: " + this.idRegistro);
+        System.out.println("Cerrando y liberando recurso de forma segura para el registro: " + this.idRegistro);
     }
 }
